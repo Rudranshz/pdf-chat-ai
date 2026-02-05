@@ -1,0 +1,1 @@
+#database.py: Handles turning text into vectors and saving them to chroma_db (Phase 2).

@@ -1,0 +1,1 @@
+#ingest.py: Dedicated solely to reading the PDF and chopping it into chunks (Phase 1).

@@ -1,0 +1,1 @@
+#__init__.py: Tells Python, "Treat this folder as a package." This allows you to import your ingestion logic into your main app later.

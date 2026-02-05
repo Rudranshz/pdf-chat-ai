@@ -1,0 +1,14 @@
+# --- 🛑 FILES TO BLOCK (Security) ---
+.env
+.streamlit/secrets.toml
+**/*.toml
+
+# --- 🧱 JUNK FILES (Don't Upload) ---
+chroma_db/
+__pycache__/
+*.pyc
+
+# --- 📄 DATA FILES (Don't Upload) ---
+*.pdf
+temp_*.pdf
+data/
