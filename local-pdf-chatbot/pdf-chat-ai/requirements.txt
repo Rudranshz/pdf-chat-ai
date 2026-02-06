@@ -11,3 +11,4 @@ langchain-huggingface
 pysqlite3-binary
 # --- Local Tools ---
 langchain-ollama
+sentence-transformers
