@@ -5,10 +5,8 @@ langchain-core
 langchain-chroma
 pypdf
 python-dotenv
-# --- Cloud Tools ---
 langchain-groq
 langchain-huggingface
 pysqlite3-binary
-# --- Local Tools ---
 langchain-ollama
 sentence-transformers
