@@ -36,7 +36,7 @@ if not GROQ_API_KEY or not HF_TOKEN:
 @st.cache_resource
 def load_models():
     # Groq LPU (Fast Inference)
-    llm = ChatGroq(model="llama-3.3-70b-specdec", groq_api_key=GROQ_API_KEY)
+    llm = ChatGroq(model="llama-3.3-70b-versatile", groq_api_key=GROQ_API_KEY)
     # HuggingFace Embeddings (Cloud CPU)
     embed_model = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     return llm, embed_model
@@ -97,4 +97,4 @@ if uploaded_files:
         response = rag_chain.invoke({"input": user_input, "chat_history": st.session_state.chat_history})
         
         st.session_state.messages.append({"role": "assistant", "content": response["answer"]})
-        with st.chat_message("assistant"): st.markdown(response["answer"])
+        with st.chat_message("assistant"): st.markdown(response["answer"])  
